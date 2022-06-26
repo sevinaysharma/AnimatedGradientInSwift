@@ -27,9 +27,13 @@ extension UIColor {
         }
         
         // First color of first color should be same as last color of last colorset to make a smooth gradient animation
-        colorSet.append([colors[0],colors[1]])
-        colorSet.append([colors[1],colors[2]])
-        colorSet.append([colors[2],colors[0]])
+        for index in 0...(set-1) {
+            if index == (set-1){
+                colorSet.append([colors[index],colors[0]])
+            }else{
+                colorSet.append([colors[index],colors[index+1]])
+            }
+        }
         return colorSet
     }
 }

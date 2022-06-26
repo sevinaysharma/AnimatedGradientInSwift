@@ -13,6 +13,15 @@ class ViewController: UIViewController {
     let color2 = UIColor(red: 134/255, green: 168/255, blue: 231/255, alpha: 1)
     let color3 = UIColor(red: 95/255, green: 251/255, blue: 241/255, alpha: 1)
     
+    @IBOutlet weak var a: UIButton!
+    @IBOutlet weak var b: UIButton!
+    @IBOutlet weak var c: UIButton!
+    @IBOutlet weak var d: UIButton!
+    @IBOutlet weak var e: UIButton!
+    @IBOutlet weak var f: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

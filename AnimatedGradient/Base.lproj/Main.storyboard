@@ -16,6 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHE-i7-YvH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="e8s-X4-MkX">
                                 <rect key="frame" x="16" y="228" width="382" height="440"/>
                                 <subviews>
@@ -121,8 +125,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zHE-i7-YvH" secondAttribute="bottom" id="5SW-8e-dNE"/>
                             <constraint firstItem="e8s-X4-MkX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9a1-lm-vJe"/>
+                            <constraint firstItem="zHE-i7-YvH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9cJ-hj-BeM"/>
                             <constraint firstItem="e8s-X4-MkX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Kse-La-VBb"/>
+                            <constraint firstItem="zHE-i7-YvH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="drD-rs-qNA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zHE-i7-YvH" secondAttribute="trailing" id="pmI-38-xzL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e8s-X4-MkX" secondAttribute="trailing" constant="16" id="qJR-g9-mxa"/>
                         </constraints>
                     </view>
@@ -133,6 +141,7 @@
                         <outlet property="d" destination="GcS-4R-qbd" id="zx6-M7-UYH"/>
                         <outlet property="e" destination="GDN-na-lt9" id="TrT-kz-q40"/>
                         <outlet property="f" destination="LJf-wW-t8V" id="PJ1-vH-48f"/>
+                        <outlet property="sampleGradientView" destination="zHE-i7-YvH" id="XA1-9g-0rH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

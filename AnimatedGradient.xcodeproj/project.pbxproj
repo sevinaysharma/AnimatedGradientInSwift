@@ -15,6 +15,7 @@
 		D4E1A3D72868894000D8B366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E1A3D52868894000D8B366 /* LaunchScreen.storyboard */; };
 		D4E1A3DF2868896200D8B366 /* UIView+AnimatedGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1A3DE2868896200D8B366 /* UIView+AnimatedGradient.swift */; };
 		D4E1A3E128688CC700D8B366 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1A3E028688CC700D8B366 /* UIColor+Extensions.swift */; };
+		D4E1A3E42868B18500D8B366 /* AnimatedGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1A3E32868B18500D8B366 /* AnimatedGradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D4E1A3D82868894000D8B366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4E1A3DE2868896200D8B366 /* UIView+AnimatedGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AnimatedGradient.swift"; sourceTree = "<group>"; };
 		D4E1A3E028688CC700D8B366 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		D4E1A3E32868B18500D8B366 /* AnimatedGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,14 +65,23 @@
 				D4E1A3CA2868893E00D8B366 /* AppDelegate.swift */,
 				D4E1A3CC2868893E00D8B366 /* SceneDelegate.swift */,
 				D4E1A3CE2868893E00D8B366 /* ViewController.swift */,
+				D4E1A3E2286898E900D8B366 /* GradientFiles */,
 				D4E1A3D02868893E00D8B366 /* Main.storyboard */,
 				D4E1A3D32868894000D8B366 /* Assets.xcassets */,
 				D4E1A3D52868894000D8B366 /* LaunchScreen.storyboard */,
 				D4E1A3D82868894000D8B366 /* Info.plist */,
-				D4E1A3DE2868896200D8B366 /* UIView+AnimatedGradient.swift */,
-				D4E1A3E028688CC700D8B366 /* UIColor+Extensions.swift */,
 			);
 			path = AnimatedGradient;
+			sourceTree = "<group>";
+		};
+		D4E1A3E2286898E900D8B366 /* GradientFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D4E1A3DE2868896200D8B366 /* UIView+AnimatedGradient.swift */,
+				D4E1A3E028688CC700D8B366 /* UIColor+Extensions.swift */,
+				D4E1A3E32868B18500D8B366 /* AnimatedGradientView.swift */,
+			);
+			path = GradientFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4E1A3DF2868896200D8B366 /* UIView+AnimatedGradient.swift in Sources */,
+				D4E1A3E42868B18500D8B366 /* AnimatedGradientView.swift in Sources */,
 				D4E1A3E128688CC700D8B366 /* UIColor+Extensions.swift in Sources */,
 				D4E1A3CF2868893E00D8B366 /* ViewController.swift in Sources */,
 				D4E1A3CB2868893E00D8B366 /* AppDelegate.swift in Sources */,

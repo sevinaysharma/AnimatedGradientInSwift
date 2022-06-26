@@ -19,17 +19,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var d: UIButton!
     @IBOutlet weak var e: UIButton!
     @IBOutlet weak var f: UIButton!
+    @IBOutlet weak var sampleGradientView: UIView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        a.animatedGradient(UIColor.colorSet(3))
+        a.animatedGradient(UIColor.colorSet(3),diagonalGradient: true)
         b.animatedGradient(UIColor.colorSet(3))
         c.animatedGradient(UIColor.colorSet(3))
         d.animatedGradient(UIColor.colorSet(3))
         e.animatedGradient(UIColor.colorSet(3))
-        f.animatedGradient(UIColor.colorSet(3))
+        f.animatedGradient(UIColor.colorSet(3),diagonalGradient: true)
+        self.sampleGradientView.animatedGradient([
+            [color1, color2],
+            [color2, color3],
+            [color3, color1]
+        ], diagonalGradient: true)
         // Do any additional setup after loading the view.
     }
 

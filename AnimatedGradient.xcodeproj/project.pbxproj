@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D42005C72868CFAF0050DEC7 /* GradientAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42005C62868CFAF0050DEC7 /* GradientAnimationLayer.swift */; };
 		D4E1A3CB2868893E00D8B366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1A3CA2868893E00D8B366 /* AppDelegate.swift */; };
 		D4E1A3CD2868893E00D8B366 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1A3CC2868893E00D8B366 /* SceneDelegate.swift */; };
 		D4E1A3CF2868893E00D8B366 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1A3CE2868893E00D8B366 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D42005C62868CFAF0050DEC7 /* GradientAnimationLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAnimationLayer.swift; sourceTree = "<group>"; };
 		D4E1A3C72868893E00D8B366 /* AnimatedGradient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedGradient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E1A3CA2868893E00D8B366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4E1A3CC2868893E00D8B366 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		D4E1A3E2286898E900D8B366 /* GradientFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D42005C62868CFAF0050DEC7 /* GradientAnimationLayer.swift */,
 				D4E1A3DE2868896200D8B366 /* UIView+AnimatedGradient.swift */,
 				D4E1A3E028688CC700D8B366 /* UIColor+Extensions.swift */,
 				D4E1A3E32868B18500D8B366 /* AnimatedGradientView.swift */,
@@ -161,6 +164,7 @@
 				D4E1A3CF2868893E00D8B366 /* ViewController.swift in Sources */,
 				D4E1A3CB2868893E00D8B366 /* AppDelegate.swift in Sources */,
 				D4E1A3CD2868893E00D8B366 /* SceneDelegate.swift in Sources */,
+				D42005C72868CFAF0050DEC7 /* GradientAnimationLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

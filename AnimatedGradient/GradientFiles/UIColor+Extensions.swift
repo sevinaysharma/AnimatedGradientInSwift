@@ -14,10 +14,28 @@ extension UIColor {
         return UIColor(red: CGFloat.random(in: 0...255)/255, green: CGFloat.random(in: 0...255)/255, blue: CGFloat.random(in: 0...255)/255, alpha: 1)
     }
     
-    ///color set generator
-    static func colorSet(_ set: Int, color: Int = 3) -> [[UIColor]] {
+    /// color set generator from UIColors
+    static func colorSet(_ colors: [UIColor]) -> [[UIColor]] {
         var colorSet = [[UIColor]]()
-        if set == 0 || color == 0{
+        if colors.count == 0{
+            return []
+        }
+        
+        // First color of first color should be same as last color of last colorset to make a smooth gradient animation
+        for index in 0...(colors.count-1) {
+            if index == (colors.count-1){
+                colorSet.append([colors[index],colors[0]])
+            }else{
+                colorSet.append([colors[index],colors[index+1]])
+            }
+        }
+        return colorSet
+    }
+    
+    /// random colorSet generator
+    static func colorSet(_ color: Int = 3) -> [[UIColor]] {
+        var colorSet = [[UIColor]]()
+        if color == 0{
             return []
         }
         
@@ -27,8 +45,8 @@ extension UIColor {
         }
         
         // First color of first color should be same as last color of last colorset to make a smooth gradient animation
-        for index in 0...(set-1) {
-            if index == (set-1){
+        for index in 0...(color-1) {
+            if index == (color-1){
                 colorSet.append([colors[index],colors[0]])
             }else{
                 colorSet.append([colors[index],colors[index+1]])

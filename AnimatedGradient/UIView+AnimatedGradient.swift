@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
     /// adds a animated gradient with sets of color passed 
-    func animatedGradient(_ gradientSet: [[UIColor]]){
+    func animatedGradient(_ gradientSet: [[UIColor]], diagonalGradient: Bool = false){
         let gradient: CAGradientLayer = CAGradientLayer()
         let gradientColorSet = gradientSet.map({ return $0.map({ return $0.cgColor})})
         var colorIndex: Int = 0
@@ -25,6 +25,7 @@ extension UIView {
         let gradientAnimation = CABasicAnimation(keyPath: "colors")
     //    gradientAnimation.delegate = self
         gradientAnimation.duration = 3.0
+        gradientAnimation.autoreverses = true
         gradientAnimation.repeatCount = .infinity
         if colorIndex < gradientColorSet.count - 1 {
             colorIndex += 1
@@ -35,7 +36,10 @@ extension UIView {
         
         gradientAnimation.fillMode = .forwards
         gradientAnimation.isRemovedOnCompletion = false
-        
+        if diagonalGradient {
+            gradient.startPoint = CGPoint(x:0.0, y:0.0)
+            gradient.endPoint = CGPoint(x:1.0, y:1.0)
+        }
         gradient.add(gradientAnimation, forKey: "colors")
     }
 }

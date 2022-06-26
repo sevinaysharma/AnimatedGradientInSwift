@@ -24,6 +24,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        a.animatedGradient(UIColor.colorSet(3))
+        b.animatedGradient(UIColor.colorSet(3))
+        c.animatedGradient(UIColor.colorSet(3))
+        d.animatedGradient(UIColor.colorSet(3))
+        e.animatedGradient(UIColor.colorSet(3))
+        f.animatedGradient(UIColor.colorSet(3))
         // Do any additional setup after loading the view.
     }
 

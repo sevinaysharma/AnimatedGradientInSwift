@@ -15,7 +15,7 @@ extension UIColor {
     }
     
     /// color set generator from UIColors for gradient animation
-    static func colorSet(_ colors: [UIColor]) -> [[UIColor]] {
+    static func gradientSet(_ colors: [UIColor]) -> [[UIColor]] {
         var colorSet = [[UIColor]]()
         if colors.count == 0{
             return []
@@ -33,7 +33,7 @@ extension UIColor {
     }
     
     /// random colorSet generator
-    static func colorSet(_ color: Int = 3) -> [[UIColor]] {
+    static func gradientSet(_ color: Int = 3) -> [[UIColor]] {
         var colorSet = [[UIColor]]()
         if color == 0{
             return []

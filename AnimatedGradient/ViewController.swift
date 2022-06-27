@@ -25,13 +25,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        a.animatedGradient(UIColor.colorSet(3))
-        b.animatedGradient(UIColor.colorSet(3))
-        c.animatedGradient(UIColor.colorSet(3))
-        d.animatedGradient(UIColor.colorSet(3))
-        e.animatedGradient(UIColor.colorSet(3))
-        f.animatedGradient(UIColor.colorSet(3))
-        self.sampleGradientView.animatedGradient(UIColor.colorSet([color1,color2,color3]))
+        a.animatedGradient(UIColor.gradientSet(3))
+        b.animatedGradient(UIColor.gradientSet(3))
+        c.animatedGradient(UIColor.gradientSet(3))
+        d.animatedGradient(UIColor.gradientSet(3))
+        e.animatedGradient(UIColor.gradientSet(3))
+        f.animatedGradient(UIColor.gradientSet(3))
+        self.sampleGradientView.animatedGradient(UIColor.gradientSet([color1,color2,color3]))
         // Do any additional setup after loading the view.
     }
 

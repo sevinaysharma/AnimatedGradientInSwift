@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class GradientAnimationLayer: CAGradientLayer,CAAnimationDelegate {
+    
     var gradientColorSet: [[CGColor]] = []
     var colorIndex: Int = 0
     var animationDuration: CFTimeInterval = 3.0

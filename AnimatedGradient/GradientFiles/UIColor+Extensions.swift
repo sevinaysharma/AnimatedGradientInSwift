@@ -14,7 +14,7 @@ extension UIColor {
         return UIColor(red: CGFloat.random(in: 0...255)/255, green: CGFloat.random(in: 0...255)/255, blue: CGFloat.random(in: 0...255)/255, alpha: 1)
     }
     
-    /// color set generator from UIColors
+    /// color set generator from UIColors for gradient animation
     static func colorSet(_ colors: [UIColor]) -> [[UIColor]] {
         var colorSet = [[UIColor]]()
         if colors.count == 0{

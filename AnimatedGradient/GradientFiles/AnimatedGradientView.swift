@@ -18,6 +18,7 @@ class AnimatedGradientView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.gradientLayer?.frame = bounds
     }
     
     required init?(coder: NSCoder) {
